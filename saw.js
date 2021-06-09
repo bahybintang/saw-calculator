@@ -101,7 +101,7 @@ function pushTable() {
         }
     })
     
-    results.sort((a, b) => (a.SAWValue < b.SAWValue))
+    results.sort((a, b) => (b.SAWValue - a.SAWValue))
 
     for (let i = 0; i < results.length; i++) {
         content += `
